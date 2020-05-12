@@ -159,7 +159,7 @@ li {
   border-top: 1px solid #47748b;
   margin-bottom: 20px;
 }
-.jumpo {
+.jumbo {
   background-color: transparent;
   margin-top: 20px;
   min-height: 200px;
@@ -179,5 +179,10 @@ li {
   }
   #sidebarCollapse span {
     display: none;
+  }
+}
+@media (min-width: 768px) {
+  .jumbo {
+    padding: 4rem 2rem;
   }
 }
