@@ -67,7 +67,6 @@ body {
 #sidebar a:hover .items {
   color: #755c3c;
 }
-
 .profile-pic {
   border-radius: 50%;
   padding: 10px 50px;
@@ -179,6 +178,9 @@ li {
   }
   #sidebarCollapse span {
     display: none;
+  }
+  .custom-card {
+    margin: 10px 40px;
   }
 }
 @media (min-width: 768px) {
