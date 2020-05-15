@@ -67,17 +67,22 @@ body {
 #sidebar a:hover .items {
   color: #755c3c;
 }
+.mobile-bio {
+  display: none;
+}
 .profile-pic {
   border-radius: 50%;
   padding: 10px 50px;
   margin-top: 30px;
-  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
 }
 .social-icons-list {
-  width: 100%;
+  width: fit-content;
+  display: block;
+  margin: auto;
   color: #54b689;
+  /* border: 2px solid #2c3b42; */
   padding: 10px 40px;
 }
 
@@ -164,6 +169,10 @@ li {
   min-height: 200px;
   margin-bottom: 0px;
 }
+
+.sub-title {
+  padding-left: 30px;
+}
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
@@ -171,7 +180,9 @@ li {
 @media (max-width: 768px) {
   #sidebar {
     display: none;
-    margin-left: -3000px;
+  }
+  .mobile-bio {
+    display: block;
   }
   #sidebar.active {
     margin-left: 0;
@@ -179,12 +190,15 @@ li {
   #sidebarCollapse span {
     display: none;
   }
+}
+
+@media (max-width: 576px) {
   .custom-card {
-    margin: 10px 40px;
+    margin: 10px 10%;
   }
 }
 @media (min-width: 768px) {
   .jumbo {
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
   }
 }
