@@ -2,6 +2,9 @@ body {
   background: #fafafa;
   font-family: Nunito;
 }
+a {
+  text-decoration: none;
+}
 
 .navbar {
   padding: 15px 10px;
@@ -113,7 +116,7 @@ a:hover .social-icon {
   font-size: 30px;
 }
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito";
 }
 .custom-card {
   margin: 30px auto;
@@ -124,6 +127,10 @@ p {
   display: flex;
   flex-direction: column;
   transition: 0.2s ease-in-out;
+}
+
+.bio-intro {
+  font-size: 700;
 }
 .custom-card:hover {
   animation: sqw 2s infinite;
